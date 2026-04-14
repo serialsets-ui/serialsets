@@ -1,0 +1,3074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERIALSETS LIMITED — Exactly Yours | ICT, Hardware & Enterprise Systems</title>
+<meta name="description" content="SERIALSETS LIMITED delivers integrated ICT solutions, hardware systems engineering, and enterprise platform development. Lekki-Ajah, Lagos.">
+<meta name="keywords" content="SERIALSETS, ICT solutions Lagos, enterprise systems Nigeria, ERP software, hardware engineering, technology company Lagos">
+<meta property="og:title" content="SERIALSETS LIMITED — Exactly Yours">
+<meta property="og:description" content="The technology engine for modern enterprises. ICT, Hardware & Enterprise Systems.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18.5' stroke='%2300D6BE' stroke-width='1.5' fill='%23080C12'/%3E%3Cpath d='M20 6v8l3 3v8l-3 3v4' stroke='%2300D6BE' stroke-width='1.3' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='20' cy='6' r='2' fill='%2300D6BE'/%3E%3Ccircle cx='23' cy='17' r='2' fill='%2300D6BE'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;background:#080C12;color:#EDF0F3;font-family:'DM Sans',system-ui,sans-serif;overflow-x:hidden}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:0.15}50%{opacity:0.4}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes glow{0%,100%{box-shadow:0 0 8px rgba(0,214,190,0.3)}50%{box-shadow:0 0 20px rgba(0,214,190,0.6)}}
+button:hover{opacity:0.92}
+input:focus,textarea:focus{border-color:#00D6BE!important;box-shadow:0 0 0 2px rgba(0,214,190,0.1)}
+::placeholder{color:#8899AD}
+img{display:block}
+.page-transition{animation:fadeIn 0.4s ease}
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#00D6BE,#2EECD8);z-index:200;transition:width 0.1s linear;pointer-events:none}
+#back-to-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:#00D6BE;color:#080C12;border:none;cursor:pointer;z-index:99;display:flex;align-items:center;justify-content:center;transition:all 0.3s;box-shadow:0 4px 15px rgba(0,214,190,0.3)}
+#back-to-top:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,214,190,0.4)}
+#back-to-top.hidden{opacity:0;pointer-events:none;transform:translateY(20px)}
+@media(max-width:900px){
+  .nav-desk{display:none!important}
+  .nav-mob-btn{display:block!important}
+  .grid-2{grid-template-columns:1fr!important}
+  .grid-3{grid-template-columns:1fr!important}
+  .grid-4{grid-template-columns:1fr 1fr!important}
+  .hero-h1{font-size:2.2rem!important}
+  .section-pad{padding:3.5rem 1.2rem!important}
+  .footer-grid{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:600px){
+  .grid-4{grid-template-columns:1fr!important}
+  .footer-grid{grid-template-columns:1fr!important}
+}
+@media(min-width:901px){
+  .nav-mob-btn{display:none!important}
+  .mobile-drawer{display:none!important}
+}
+</style>
+</head>
+<body>
+<div id="scroll-progress" style="width:0%"></div>
+<div id="root"></div>
+<button id="back-to-top" class="hidden" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+<script>
+window.addEventListener('scroll',function(){
+  var h=document.documentElement,b=document.body;
+  var st=h.scrollTop||b.scrollTop;
+  var sh=h.scrollHeight||b.scrollHeight;
+  var pct=(st/(sh-h.clientHeight))*100;
+  document.getElementById('scroll-progress').style.width=pct+'%';
+  var btn=document.getElementById('back-to-top');
+  if(st>500)btn.classList.remove('hidden');else btn.classList.add('hidden');
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script>const {
+  useState,
+  useEffect,
+  useRef,
+  useCallback
+} = React;
+const C = {
+  midnight: "#080C12",
+  deep: "#0C1018",
+  carbon: "#131A24",
+  panel: "#1A2333",
+  border: "rgba(255,255,255,0.06)",
+  borderH: "rgba(0,214,190,0.25)",
+  slate: "#3D4F65",
+  mist: "#8899AD",
+  cloud: "#C4CED9",
+  white: "#EDF0F3",
+  bright: "#FFF",
+  cyan: "#00D6BE",
+  cyanL: "#2EECD8",
+  cyanD: "#009E8C",
+  cyanGlow: "rgba(0,214,190,0.15)",
+  blue: "#4A8FD6",
+  blueL: "#6DABE8",
+  purple: "#8B6CE7",
+  orange: "#E8915A"
+};
+const IMG = {
+  hero: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1400&q=80",
+  coding: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
+  servers: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+  dashboard: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+  team: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+  energy: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+  legal: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+  building: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+  office: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+  circuit: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+  meeting: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+  laptop: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
+};
+const LOGO_NAV = "data:image/webp;base64,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";
+const LOGO_FT = "data:image/webp;base64,UklGRi4DAABXRUJQVlA4ICIDAADQEQCdASo4ADgAPlEkjUWjoiEUDAVUOAUEsoBmVIAc+rZGyq3yAD+m+AN0p/gPS/6ov8J4o/m//u+4H/L/651hf129mb9lS3NbiX4dYqxt3z5PsW2BcOHCAB8P691dca63hIgOVVu2HkLe8qLookFEea1diKvM+fZaQ4inNOKLeo7pqzdLUrt/YRdTMQz8w7ywiBYLq+3wAP7+dgmiAwL2qd2YxtkXEQI0Cn9uWsE+DVeFbjzGH6lMLvgIMEqB98r3bDKs3WWEgXPa63FvkNwGdb/XW//C6PZoIPI9meHVudhNJPyOTom8t2Ph36buh3frn3gW3I2PA7s/CmaS1hz6NdzPH/Ku09Djf4rvyMmjsZYSENDeRDpFy00BTLKpRUEd0MFpcbJF6iE4eJDyYBDzUjk0LOHgVWOqFs/GLdrCwZiNJ0o6qk97XqRm7p0mYluEBWkCGB+vLEQXSGKpECb0wi0DNC6ougpyhCUus76Us59SyXgeipPcfcedUZYqs4wn+UJC2XyiNz05Y1Bke5N0JkKZLb0j90E2fyQGlEPykC/3ZIdH+Vpya4MxJyj/z038hgF1DWxfMY+OXq538nT9ShXf/irlm6wYVE57q9UPHVfpTsW3FhoCdGvf0uXxOBbLkomu8G9DRYPsyeKuSVJuP4B13J5oUypTjyWna/n2lgbwk+F2/U5TmiCR9iZq4ve/Ud28tCIv0/RKGU/z/aY6vxJNwHp/eT3AcEX3ZPGT3NHJPc3+2mStlsKjzxd//3Nmx5A6CQc4TMO0H0vIL74spf4uyBG435ebRDwFMWGmQQuIkd8xPs+nKVhO94A2wCzvWu6b/wZycvpqbGBZHeIv/FefzdPg30s4BPO6j0WVsvF5r3YeZfsawlFQBauGdbl5E2DkXu3yGR3buRqciDM/HE7umCyShu345fFX3A17mSxjxcBb5RrVlzOvfuaxZLpVY+Actb3YPvrDQLgQ/1Aun/wjho/6XPt7EtpHTb8TiQoDvYuMz7kCiojbWVnUatiFxMRF369ucPfvViqDibrurIpCPwrbKHhNPRwqIMKq4AAA";
+const LOGO_HERO = "data:image/webp;base64,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";
+
+/* ─── ICONS ─── */
+const Ic = {
+  arrow: /*#__PURE__*/React.createElement("svg", {
+    width: "16",
+    height: "16",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M5 12h14M12 5l7 7-7 7"
+  })),
+  code: /*#__PURE__*/React.createElement("svg", {
+    width: "20",
+    height: "20",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M16 18l6-6-6-6M8 6l-6 6 6 6"
+  })),
+  server: /*#__PURE__*/React.createElement("svg", {
+    width: "20",
+    height: "20",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("rect", {
+    x: "2",
+    y: "2",
+    width: "20",
+    height: "8",
+    rx: "2"
+  }), /*#__PURE__*/React.createElement("rect", {
+    x: "2",
+    y: "14",
+    width: "20",
+    height: "8",
+    rx: "2"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "6",
+    cy: "6",
+    r: "1"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "6",
+    cy: "18",
+    r: "1"
+  })),
+  layers: /*#__PURE__*/React.createElement("svg", {
+    width: "20",
+    height: "20",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+  })),
+  check: /*#__PURE__*/React.createElement("svg", {
+    width: "14",
+    height: "14",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "#00D6BE",
+    strokeWidth: "3"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M20 6L9 17l-5-5"
+  })),
+  mail: /*#__PURE__*/React.createElement("svg", {
+    width: "18",
+    height: "18",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("rect", {
+    x: "2",
+    y: "4",
+    width: "20",
+    height: "16",
+    rx: "2"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M22 7l-10 7L2 7"
+  })),
+  phone: /*#__PURE__*/React.createElement("svg", {
+    width: "18",
+    height: "18",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.86 19.86 0 013.09 5.18 2 2 0 015.11 3h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 11.91a16 16 0 006 6l2.27-2.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"
+  })),
+  pin: /*#__PURE__*/React.createElement("svg", {
+    width: "18",
+    height: "18",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "10",
+    r: "3"
+  })),
+  chev: /*#__PURE__*/React.createElement("svg", {
+    width: "16",
+    height: "16",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M6 9l6 6 6-6"
+  })),
+  menu: /*#__PURE__*/React.createElement("svg", {
+    width: "22",
+    height: "22",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M3 12h18M3 6h18M3 18h18"
+  })),
+  x: /*#__PURE__*/React.createElement("svg", {
+    width: "22",
+    height: "22",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M18 6L6 18M6 6l12 12"
+  })),
+  play: /*#__PURE__*/React.createElement("svg", {
+    width: "16",
+    height: "16",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    stroke: "none"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M8 5v14l11-7z"
+  }))
+};
+
+/* ─── DATA ─── */
+const PROJECTS = [{
+  id: "oro",
+  client: "ORO ENERGY",
+  formerly: "ORO Mechanical & Technical Services",
+  tagline: "From Mechanical Services to Full Energy Solutions",
+  color: C.orange,
+  category: "Full Business Rebranding",
+  img: IMG.energy,
+  services: ["Brand Strategy & Identity", "Visual Design System", "Digital Platform Development", "Market Positioning"],
+  challenge: "ORO Mechanical & Technical Services had outgrown its identity. The company had evolved into a comprehensive energy solutions company — but its brand still reflected the old business, costing them credibility with larger clients in the energy sector.",
+  solution: "SERIALSETS executed a complete business rebrand — from strategic naming (ORO ENERGY) through to full visual identity, brand guidelines, digital platform, and market positioning. Every touchpoint was redesigned to communicate energy infrastructure and power systems capabilities.",
+  outcomes: ["Complete brand transformation to energy solutions identity", "New visual identity system for modern energy positioning", "Digital platform showcasing expanded capabilities", "Strengthened positioning for larger contracts"],
+  scope: ["Brand naming & strategy", "Logo & identity design", "Website design & development", "Marketing collateral", "Brand guidelines"]
+}, {
+  id: "justra",
+  client: "JUSTRA",
+  tagline: "Legal & Compliance, Systematised",
+  color: C.blue,
+  category: "Business Solution Platform",
+  img: IMG.legal,
+  services: ["Platform Architecture", "Custom Software Development", "UX/UI Design", "System Integration"],
+  challenge: "Legal and compliance processes were fragmented across spreadsheets, emails, and disconnected tools. JUSTRA needed a unified platform handling legal operations and compliance tracking while remaining accessible to non-technical users.",
+  solution: "SERIALSETS designed and built a comprehensive legal and compliance platform from the ground up — centralising case management, compliance tracking, document handling, and reporting into one integrated system architected for scalability.",
+  outcomes: ["Centralised legal operations replacing fragmented processes", "Automated compliance tracking with alerts and deadlines", "Significant reduction in case processing time", "Scalable architecture for organisational growth"],
+  scope: ["Requirements analysis", "Custom platform development", "UI/UX design", "Testing & deployment", "Training & support"]
+}, {
+  id: "kcee",
+  client: "KCEE Elevator",
+  tagline: "Elevating Business, Literally and Digitally",
+  color: C.cyan,
+  category: "Business Development & Digital Presence",
+  img: IMG.building,
+  services: ["Business Strategy", "Brand Development", "Website & Digital Presence", "Growth Systems"],
+  challenge: "KCEE Elevator had technical expertise but lacked business infrastructure and digital presence to scale. Growth was limited by word-of-mouth, no online visibility, and underdeveloped business systems.",
+  solution: "SERIALSETS delivered a full business development engagement — strategic expansion planning, brand identity, lead-generating website, social media footprint, and business systems to support growth trajectory.",
+  outcomes: ["Professional brand identity with market credibility", "Lead-generating website with optimised funnels", "Digital footprint across key platforms", "Business systems supporting expansion"],
+  scope: ["Business development strategy", "Brand identity & positioning", "Website development", "Social media setup", "Business systems"]
+}];
+const SERVICES = [{
+  id: "ict",
+  title: "ICT & Digital Solutions",
+  icon: Ic.code,
+  color: C.blue,
+  img: IMG.coding,
+  tagline: "Custom-built digital platforms that transform operations.",
+  items: ["Custom web & mobile apps", "Business automation", "Cloud & SaaS platforms", "Data management & reporting", "Cybersecurity solutions"],
+  useCases: ["Automating manual processes", "Improving customer engagement", "Enhancing operational visibility"]
+}, {
+  id: "hw",
+  title: "Hardware & Systems Engineering",
+  icon: Ic.server,
+  color: C.cyan,
+  img: IMG.servers,
+  tagline: "Infrastructure that powers modern digital environments.",
+  items: ["Network design & installation", "IT hardware deployment", "Smart systems & IoT", "Structured cabling"],
+  useCases: ["Office and facility setup", "Reliable network systems", "Integrated smart environments"]
+}, {
+  id: "ent",
+  title: "Enterprise Systems Development",
+  icon: Ic.layers,
+  color: C.cyanL,
+  img: IMG.dashboard,
+  tagline: "Platforms for large-scale operations and decision-making.",
+  items: ["ERP system development", "Custom enterprise platforms", "API development & integrations", "Multi-user architecture"],
+  useCases: ["Multi-branch operations", "Centralizing business processes", "Real-time reporting & analytics"]
+}];
+const PRODUCTS = [{
+  id: "erp",
+  name: "SETS ERP",
+  badge: "Flagship",
+  color: C.cyan,
+  desc: "A modular enterprise system for managing business operations in one unified platform.",
+  features: ["Dashboard & analytics", "Financial management", "CRM tools", "Staff management", "Multi-branch support", "Real-time reporting"]
+}, {
+  id: "prop",
+  name: "SETS Property Manager",
+  badge: "Real Estate",
+  color: C.blue,
+  desc: "Manage real estate operations including tenants, payments, and maintenance.",
+  features: ["Tenant & lease tracking", "Payment management", "Maintenance workflows"]
+}, {
+  id: "energy",
+  name: "SETS Energy Monitor",
+  badge: "Energy",
+  color: C.purple,
+  desc: "Track and optimise energy usage, performance, and system efficiency.",
+  features: ["Usage analytics", "Performance optimization", "Efficiency reporting"]
+}, {
+  id: "learn",
+  name: "SETS Learn Platform",
+  badge: "Education",
+  color: C.cyanL,
+  desc: "A digital learning system for courses, students, and content.",
+  features: ["Course management", "Student records", "Content delivery", "Progress tracking"]
+}];
+const INDUSTRIES = [{
+  icon: "🏢",
+  name: "Businesses & SMEs",
+  desc: "Automation, ERP, and integrated platforms."
+}, {
+  icon: "🏘️",
+  name: "Real Estate & Facilities",
+  desc: "Property management and tenant systems."
+}, {
+  icon: "🎓",
+  name: "Educational Institutions",
+  desc: "LMS, records, and administration."
+}, {
+  icon: "⛪",
+  name: "Religious & Non-Profits",
+  desc: "Administration and communication systems."
+}];
+const INSIGHTS = [{
+  id: 1,
+  title: "How ORO ENERGY's Rebrand Unlocked New Markets",
+  cat: "Case Study",
+  date: "Apr 10, 2026",
+  time: "6 min",
+  img: IMG.energy,
+  excerpt: "When a company outgrows its name, everything changes. Here's how a strategic rebrand repositioned ORO in the energy sector."
+}, {
+  id: 2,
+  title: "Why Nigerian SMEs Need ERP Systems in 2026",
+  cat: "Technology",
+  date: "Apr 5, 2026",
+  time: "5 min",
+  img: IMG.dashboard,
+  excerpt: "Manual processes are costing Nigerian businesses more than they realise. Enterprise resource planning changes the equation."
+}, {
+  id: 3,
+  title: "Building a Legal Tech Platform: Lessons from JUSTRA",
+  cat: "Case Study",
+  date: "Mar 28, 2026",
+  time: "7 min",
+  img: IMG.legal,
+  excerpt: "Legal operations are ripe for digital transformation. The architecture decisions behind JUSTRA's compliance platform."
+}, {
+  id: 4,
+  title: "The Real Cost of Having No Digital Presence",
+  cat: "Business",
+  date: "Mar 20, 2026",
+  time: "4 min",
+  img: IMG.laptop,
+  excerpt: "KCEE Elevator was invisible online. What businesses lose every month without a proper digital footprint."
+}, {
+  id: 5,
+  title: "IoT in Nigerian Facilities: What's Possible Today",
+  cat: "Innovation",
+  date: "Mar 12, 2026",
+  time: "6 min",
+  img: IMG.servers,
+  excerpt: "Smart building technology is practical, affordable, and ready to deploy right now."
+}, {
+  id: 6,
+  title: "Choosing the Right Technology Partner",
+  cat: "Business",
+  date: "Mar 5, 2026",
+  time: "8 min",
+  img: IMG.meeting,
+  excerpt: "Not all technology companies are built the same. What to look for when selecting a partner."
+}];
+const STEPS = [{
+  num: "01",
+  label: "DISCOVER",
+  title: "Discovery",
+  desc: "Understanding your operations, challenges, and strategic goals to define the right scope.",
+  img: IMG.meeting
+}, {
+  num: "02",
+  label: "DESIGN",
+  title: "Design",
+  desc: "Architecting tailored systems with the right technologies, workflows, and integration points.",
+  img: IMG.laptop
+}, {
+  num: "03",
+  label: "BUILD",
+  title: "Development",
+  desc: "Building and integrating solutions with rigorous testing and quality assurance.",
+  img: IMG.coding
+}, {
+  num: "04",
+  label: "DEPLOY",
+  title: "Deployment",
+  desc: "Delivering performance, scalability, and long-term support that grows with your business.",
+  img: IMG.servers
+}];
+
+/* ─── STYLES ─── */
+const S = {
+  section: "section-pad",
+  tag: {
+    fontSize: "0.62rem",
+    textTransform: "uppercase",
+    letterSpacing: "0.16em",
+    color: C.cyan,
+    fontWeight: 600,
+    display: "flex",
+    alignItems: "center",
+    gap: 8,
+    marginBottom: 10
+  },
+  tagL: {
+    width: 20,
+    height: 1,
+    background: C.cyan
+  },
+  h2: {
+    fontFamily: "'Instrument Serif',Georgia,serif",
+    fontSize: "clamp(1.9rem,3.5vw,2.7rem)",
+    lineHeight: 1.15,
+    marginBottom: 10
+  },
+  em: {
+    fontStyle: "italic",
+    background: `linear-gradient(135deg,${C.cyanL},${C.cyan})`,
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"
+  },
+  desc: {
+    fontSize: "0.95rem",
+    color: C.mist,
+    lineHeight: 1.75,
+    maxWidth: 520
+  },
+  btn: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: 8,
+    padding: "0.8rem 1.8rem",
+    background: C.cyan,
+    color: C.midnight,
+    fontWeight: 600,
+    border: "none",
+    borderRadius: 4,
+    cursor: "pointer",
+    fontSize: "0.85rem",
+    transition: "all 0.3s",
+    textDecoration: "none",
+    fontFamily: "inherit"
+  },
+  btnO: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: 8,
+    padding: "0.8rem 1.8rem",
+    background: "transparent",
+    border: `1px solid ${C.slate}`,
+    color: C.cloud,
+    borderRadius: 4,
+    cursor: "pointer",
+    fontSize: "0.85rem",
+    transition: "all 0.3s",
+    fontFamily: "inherit"
+  },
+  input: {
+    width: "100%",
+    padding: "0.85rem 1rem",
+    background: C.carbon,
+    border: `1px solid ${C.border}`,
+    borderRadius: 4,
+    color: C.white,
+    fontSize: "0.88rem",
+    outline: "none",
+    fontFamily: "inherit",
+    transition: "all 0.3s"
+  },
+  label: {
+    fontSize: "0.7rem",
+    textTransform: "uppercase",
+    letterSpacing: "0.1em",
+    color: C.mist,
+    display: "block",
+    marginBottom: 4
+  },
+  imgCover: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    borderRadius: 8
+  }
+};
+
+/* ─── UTILITIES ─── */
+function Counter({
+  end,
+  suffix = ""
+}) {
+  const [v, setV] = useState(0);
+  const ref = useRef(null);
+  const go = useRef(false);
+  useEffect(() => {
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !go.current) {
+        go.current = true;
+        let s = 0;
+        const step = end / 125;
+        const t = () => {
+          s += step;
+          if (s >= end) setV(end);else {
+            setV(Math.floor(s));
+            requestAnimationFrame(t);
+          }
+        };
+        t();
+      }
+    }, {
+      threshold: 0.3
+    });
+    if (ref.current) obs.observe(ref.current);
+    return () => obs.disconnect();
+  }, [end]);
+  return /*#__PURE__*/React.createElement("span", {
+    ref: ref
+  }, v, suffix);
+}
+function Reveal({
+  children,
+  delay = 0,
+  style = {}
+}) {
+  const ref = useRef(null);
+  const [vis, setVis] = useState(false);
+  useEffect(() => {
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) setVis(true);
+    }, {
+      threshold: 0.06
+    });
+    if (ref.current) obs.observe(ref.current);
+    return () => obs.disconnect();
+  }, []);
+  return /*#__PURE__*/React.createElement("div", {
+    ref: ref,
+    style: {
+      opacity: vis ? 1 : 0,
+      transform: vis ? "translateY(0)" : "translateY(28px)",
+      transition: `all 0.65s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
+      ...style
+    }
+  }, children);
+}
+function Typer({
+  words,
+  speed = 90
+}) {
+  const [idx, setIdx] = useState(0);
+  const [text, setText] = useState("");
+  const [del, setDel] = useState(false);
+  useEffect(() => {
+    const w = words[idx];
+    const t = setTimeout(() => {
+      if (!del) {
+        setText(w.slice(0, text.length + 1));
+        if (text.length + 1 === w.length) setTimeout(() => setDel(true), 2200);
+      } else {
+        setText(w.slice(0, text.length - 1));
+        if (text.length === 0) {
+          setDel(false);
+          setIdx((idx + 1) % words.length);
+        }
+      }
+    }, del ? speed / 2 : speed);
+    return () => clearTimeout(t);
+  }, [text, del, idx, words, speed]);
+  return /*#__PURE__*/React.createElement("span", null, text, /*#__PURE__*/React.createElement("span", {
+    style: {
+      borderRight: `2px solid ${C.cyan}`,
+      marginLeft: 2,
+      animation: "blink 1s step-end infinite"
+    }
+  }, "\xA0"));
+}
+function ImgLoad({
+  src,
+  alt = "",
+  style = {},
+  className = ""
+}) {
+  const [loaded, setLoaded] = useState(false);
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      overflow: "hidden",
+      background: C.carbon,
+      ...style
+    }
+  }, !loaded && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(135deg,${C.carbon},${C.panel})`,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 24,
+      height: 24,
+      border: `2px solid ${C.cyan}`,
+      borderTopColor: "transparent",
+      borderRadius: "50%",
+      animation: "spin 0.8s linear infinite"
+    }
+  })), /*#__PURE__*/React.createElement("img", {
+    src: src,
+    alt: alt,
+    onLoad: () => setLoaded(true),
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      opacity: loaded ? 1 : 0,
+      transition: "opacity 0.5s"
+    }
+  }), /*#__PURE__*/React.createElement("style", null, "@keyframes spin{to{transform:rotate(360deg)}}"));
+}
+
+/* ─── NAV ─── */
+function Nav({
+  page,
+  setPage
+}) {
+  const [scrolled, setScrolled] = useState(false);
+  const [mob, setMob] = useState(false);
+  useEffect(() => {
+    const fn = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", fn);
+    return () => window.removeEventListener("scroll", fn);
+  }, []);
+  const links = [["home", "Home"], ["about", "About"], ["services", "Services"], ["products", "Products"], ["projects", "Projects"], ["insights", "Insights"], ["contact", "Contact"]];
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("nav", {
+    style: {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      zIndex: 100,
+      padding: "0.5rem 2rem",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      backdropFilter: "blur(20px) saturate(180%)",
+      background: scrolled ? "rgba(8,12,18,0.92)" : "rgba(8,12,18,0.4)",
+      borderBottom: `1px solid ${scrolled ? "rgba(0,214,190,0.08)" : "transparent"}`,
+      transition: "all 0.4s"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 10,
+      cursor: "pointer"
+    },
+    onClick: () => setPage("home")
+  }, /*#__PURE__*/React.createElement("img", {
+    src: LOGO_NAV,
+    alt: "SERIALSETS",
+    style: {
+      height: 36,
+      objectFit: "contain"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      lineHeight: 1
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.15rem",
+      letterSpacing: "0.04em"
+    }
+  }, "SERIALSETS"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.48rem",
+      letterSpacing: "0.22em",
+      color: C.cyan,
+      textTransform: "uppercase",
+      marginTop: 1
+    }
+  }, "Exactly Yours"))), /*#__PURE__*/React.createElement("div", {
+    className: "nav-desk",
+    style: {
+      display: "flex",
+      gap: "1.5rem",
+      alignItems: "center"
+    }
+  }, links.map(([k, l]) => /*#__PURE__*/React.createElement("span", {
+    key: k,
+    onClick: () => setPage(k),
+    style: {
+      color: page === k ? C.cyan : C.mist,
+      fontSize: "0.72rem",
+      fontWeight: 500,
+      letterSpacing: "0.05em",
+      textTransform: "uppercase",
+      cursor: "pointer",
+      transition: "color 0.3s",
+      borderBottom: page === k ? `2px solid ${C.cyan}` : "2px solid transparent",
+      paddingBottom: 3
+    }
+  }, l))), /*#__PURE__*/React.createElement("button", {
+    className: "nav-mob-btn",
+    style: {
+      background: "none",
+      border: "none",
+      color: C.white,
+      cursor: "pointer"
+    },
+    onClick: () => setMob(!mob)
+  }, mob ? Ic.x : Ic.menu)), mob && /*#__PURE__*/React.createElement("div", {
+    className: "mobile-drawer",
+    style: {
+      position: "fixed",
+      top: 0,
+      right: 0,
+      bottom: 0,
+      width: 280,
+      background: C.deep,
+      zIndex: 150,
+      padding: "5rem 2rem 2rem",
+      display: "flex",
+      flexDirection: "column",
+      gap: 6,
+      animation: "slideIn 0.3s ease",
+      borderLeft: `1px solid ${C.border}`,
+      boxShadow: "-10px 0 40px rgba(0,0,0,0.5)"
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    style: {
+      position: "absolute",
+      top: "1rem",
+      right: "1rem",
+      background: "none",
+      border: "none",
+      color: C.white,
+      cursor: "pointer"
+    },
+    onClick: () => setMob(false)
+  }, Ic.x), links.map(([k, l]) => /*#__PURE__*/React.createElement("span", {
+    key: k,
+    style: {
+      color: page === k ? C.cyan : C.mist,
+      fontSize: "1rem",
+      cursor: "pointer",
+      fontWeight: page === k ? 600 : 400,
+      padding: "0.7rem 0",
+      borderBottom: `1px solid ${C.border}`,
+      transition: "all 0.3s"
+    },
+    onClick: () => {
+      setPage(k);
+      setMob(false);
+    }
+  }, l)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: "auto",
+      padding: "1.5rem 0",
+      borderTop: `1px solid ${C.border}`
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.7rem",
+      color: C.mist,
+      marginBottom: 4
+    }
+  }, "info@serialsets.com"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.7rem",
+      color: C.mist
+    }
+  }, "Lekki\u2013Ajah, Lagos"))), mob && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "fixed",
+      inset: 0,
+      background: "rgba(0,0,0,0.5)",
+      zIndex: 140,
+      backdropFilter: "blur(4px)"
+    },
+    onClick: () => setMob(false)
+  }));
+}
+
+/* ─── HOME ─── */
+function Home({
+  setPage
+}) {
+  const [hs, setHs] = useState(null);
+  const [ti, setTi] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setTi(i => (i + 1) % PROJECTS.length), 5000);
+    return () => clearInterval(t);
+  }, []);
+  const p = PROJECTS[ti];
+  return /*#__PURE__*/React.createElement("div", {
+    className: "page-transition"
+  }, /*#__PURE__*/React.createElement("section", {
+    style: {
+      minHeight: "100vh",
+      display: "flex",
+      alignItems: "center",
+      padding: "6rem 2rem 4rem",
+      position: "relative",
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: IMG.hero,
+    alt: "",
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      opacity: 0.08
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(135deg,${C.midnight}ee 30%, ${C.midnight}99 60%, ${C.midnight}dd)`
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      backgroundImage: `linear-gradient(rgba(0,214,190,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(0,214,190,0.02) 1px, transparent 1px)`,
+      backgroundSize: "80px 80px",
+      maskImage: "radial-gradient(ellipse 50% 45% at 60% 40%, rgba(0,0,0,0.5) 0%, transparent 70%)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      zIndex: 2,
+      maxWidth: 760
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "inline-flex",
+      alignItems: "center",
+      gap: 8,
+      padding: "0.35rem 0.9rem",
+      border: `1px solid rgba(0,214,190,0.25)`,
+      borderRadius: 50,
+      fontSize: "0.68rem",
+      letterSpacing: "0.12em",
+      textTransform: "uppercase",
+      color: C.cyan,
+      marginBottom: "1.8rem",
+      backdropFilter: "blur(8px)"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 6,
+      height: 6,
+      borderRadius: "50%",
+      background: C.cyan,
+      boxShadow: `0 0 10px ${C.cyan}`,
+      animation: "glow 2s infinite"
+    }
+  }), " Exactly Yours")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.08
+  }, /*#__PURE__*/React.createElement("h1", {
+    className: "hero-h1",
+    style: {
+      fontFamily: "'Instrument Serif',Georgia,serif",
+      fontSize: "clamp(2.5rem,5.5vw,4.5rem)",
+      lineHeight: 1.08,
+      fontWeight: 400,
+      marginBottom: "1.2rem"
+    }
+  }, "The Technology Engine for", " ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, /*#__PURE__*/React.createElement(Typer, {
+    words: ["Modern Enterprises", "Smarter Operations", "Scalable Growth", "Your Business"]
+  })))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.16
+  }, /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "1.05rem",
+      lineHeight: 1.75,
+      color: C.mist,
+      maxWidth: 560,
+      marginBottom: "2.2rem"
+    }
+  }, "Designing and delivering intelligent systems across ICT, hardware, and enterprise platforms. Solutions that are functional, scalable, and future-ready.")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.24
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 10,
+      flexWrap: "wrap"
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    style: S.btn,
+    onClick: () => setPage("contact")
+  }, "Request Consultation ", Ic.arrow), /*#__PURE__*/React.createElement("button", {
+    style: S.btnO,
+    onClick: () => setPage("services")
+  }, "View Solutions")))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      right: "8%",
+      top: "50%",
+      transform: "translateY(-50%)",
+      opacity: 0.06,
+      zIndex: 1,
+      display: "none"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: LOGO_HERO,
+    alt: "",
+    style: {
+      width: 300,
+      height: 300,
+      objectFit: "contain",
+      animation: "float 6s ease-in-out infinite"
+    }
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "2.5rem 2rem",
+      background: C.deep,
+      borderTop: `1px solid ${C.border}`,
+      borderBottom: `1px solid ${C.border}`
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(4,1fr)",
+      gap: "2rem",
+      textAlign: "center"
+    },
+    className: "grid-4"
+  }, [{
+    n: 50,
+    s: "+",
+    l: "Projects Delivered"
+  }, {
+    n: 4,
+    s: "",
+    l: "SETS Products"
+  }, {
+    n: 99,
+    s: "%",
+    l: "Client Retention"
+  }, {
+    n: 4,
+    s: "",
+    l: "Industry Verticals"
+  }].map((x, i) => /*#__PURE__*/React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.06
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "2.4rem",
+      color: C.cyan
+    }
+  }, /*#__PURE__*/React.createElement(Counter, {
+    end: x.n,
+    suffix: x.s
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.7rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.1em",
+      color: C.mist,
+      marginTop: 4
+    }
+  }, x.l)))))), /*#__PURE__*/React.createElement("section", {
+    className: "section-pad",
+    style: {
+      padding: "6rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Core Services")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.05
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: S.h2
+  }, "Integrated Technology, ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Delivered End-to-End"))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.1
+  }, /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...S.desc,
+      marginBottom: "2.5rem"
+    }
+  }, "From digital platforms to physical infrastructure \u2014 complete technology systems, designed and managed.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "repeat(3,1fr)",
+      gap: "1.2rem"
+    },
+    className: "grid-3"
+  }, SERVICES.map((s, i) => /*#__PURE__*/React.createElement(Reveal, {
+    key: s.id,
+    delay: i * 0.08
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.carbon,
+      border: `1px solid ${hs === i ? C.borderH : C.border}`,
+      borderRadius: 10,
+      overflow: "hidden",
+      transition: "all 0.4s",
+      transform: hs === i ? "translateY(-6px)" : "none",
+      cursor: "pointer"
+    },
+    onMouseEnter: () => setHs(i),
+    onMouseLeave: () => setHs(null),
+    onClick: () => setPage("services")
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 160,
+      position: "relative",
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: s.img,
+    alt: s.title,
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      transition: "transform 0.6s",
+      transform: hs === i ? "scale(1.08)" : "scale(1)"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(to top, ${C.carbon} 0%, transparent 60%)`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      bottom: 12,
+      left: 16,
+      color: s.color
+    }
+  }, " ", s.icon, " ")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "1.2rem 1.4rem 1.5rem"
+    }
+  }, /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.15rem",
+      marginBottom: 6
+    }
+  }, s.title), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.83rem",
+      color: C.mist,
+      lineHeight: 1.7
+    }
+  }, s.tagline), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 10,
+      fontSize: "0.76rem",
+      color: s.color,
+      display: "flex",
+      alignItems: "center",
+      gap: 4
+    }
+  }, "Explore ", Ic.arrow)))))))), /*#__PURE__*/React.createElement("section", {
+    style: {
+      padding: "5rem 2rem",
+      background: C.deep
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Recent Projects")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.05
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: S.h2
+  }, "Real Work, ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Real Results"))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.1
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: "2rem",
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      borderRadius: 12,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      minHeight: 320
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: p.img,
+    alt: p.client,
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      position: "absolute",
+      inset: 0,
+      transition: "opacity 0.5s"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(135deg, ${C.carbon}cc 0%, transparent 60%)`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      padding: "2.5rem 2rem",
+      zIndex: 2
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.55rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.1em",
+      padding: "0.25rem 0.6rem",
+      borderRadius: 3,
+      background: `${p.color}22`,
+      color: p.color,
+      fontFamily: "'JetBrains Mono',monospace",
+      border: `1px solid ${p.color}33`
+    }
+  }, p.category), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.8rem",
+      marginTop: 14,
+      marginBottom: 4
+    }
+  }, p.client), p.formerly && /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.74rem",
+      color: C.cloud,
+      marginBottom: 10,
+      opacity: 0.8
+    }
+  }, "Formerly: ", p.formerly), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.95rem",
+      color: C.white,
+      lineHeight: 1.5,
+      marginBottom: "1.5rem",
+      fontStyle: "italic",
+      fontFamily: "'Instrument Serif',serif"
+    }
+  }, p.tagline), /*#__PURE__*/React.createElement("button", {
+    style: S.btn,
+    onClick: () => setPage("projects")
+  }, "View Case Study ", Ic.arrow))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "2.5rem 2rem",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.63rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: C.cyan,
+      marginBottom: 14
+    }
+  }, "Key Outcomes"), p.outcomes.map((o, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: "flex",
+      alignItems: "flex-start",
+      gap: 10,
+      padding: "0.6rem 0",
+      borderBottom: i < p.outcomes.length - 1 ? `1px solid ${C.border}` : "none"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      marginTop: 3,
+      flexShrink: 0
+    }
+  }, Ic.check), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.85rem",
+      color: C.cloud,
+      lineHeight: 1.6
+    }
+  }, o))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 6,
+      marginTop: "1.5rem",
+      flexWrap: "wrap"
+    }
+  }, p.services.map(s => /*#__PURE__*/React.createElement("span", {
+    key: s,
+    style: {
+      fontSize: "0.62rem",
+      padding: "0.2rem 0.5rem",
+      background: "rgba(255,255,255,0.04)",
+      borderRadius: 3,
+      color: C.mist
+    }
+  }, s))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "0.8rem 2rem",
+      borderTop: `1px solid ${C.border}`,
+      display: "flex",
+      gap: 6,
+      alignItems: "center"
+    }
+  }, PROJECTS.map((pr, i) => /*#__PURE__*/React.createElement("button", {
+    key: i,
+    onClick: () => setTi(i),
+    style: {
+      flex: ti === i ? 1 : 0,
+      minWidth: ti === i ? 0 : 10,
+      height: 4,
+      borderRadius: 2,
+      border: "none",
+      background: ti === i ? pr.color : C.slate,
+      cursor: "pointer",
+      transition: "all 0.4s"
+    }
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      marginLeft: "auto",
+      fontSize: "0.68rem",
+      color: C.mist
+    }
+  }, ti + 1, " / ", PROJECTS.length)))))), /*#__PURE__*/React.createElement("section", {
+    className: "section-pad",
+    style: {
+      padding: "6rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "3rem",
+      alignItems: "center"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Featured Product"), /*#__PURE__*/React.createElement("h2", {
+    style: S.h2
+  }, "SETS ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "ERP")), /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...S.desc,
+      marginBottom: "1.5rem"
+    }
+  }, "A unified enterprise platform to manage operations, finances, staff, and customer relationships in one place."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: 6,
+      marginBottom: "1.5rem"
+    }
+  }, PRODUCTS[0].features.map(f => /*#__PURE__*/React.createElement("div", {
+    key: f,
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 8,
+      fontSize: "0.8rem",
+      color: C.cloud,
+      padding: "0.4rem 0.7rem",
+      background: "rgba(255,255,255,0.03)",
+      borderRadius: 4,
+      borderLeft: `2px solid ${C.cyan}`
+    }
+  }, Ic.check, " ", f))), /*#__PURE__*/React.createElement("button", {
+    style: S.btn,
+    onClick: () => setPage("products")
+  }, "Explore Products ", Ic.arrow))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.15
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      borderRadius: 12,
+      overflow: "hidden",
+      position: "relative"
+    }
+  }, /*#__PURE__*/React.createElement(ImgLoad, {
+    src: IMG.dashboard,
+    alt: "SETS ERP Dashboard",
+    style: {
+      height: 320,
+      borderRadius: 12
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(135deg, ${C.midnight}88, transparent)`,
+      borderRadius: 12
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      bottom: 16,
+      left: 16,
+      fontFamily: "'JetBrains Mono',monospace",
+      fontSize: "0.65rem",
+      color: C.cyan,
+      background: `${C.midnight}cc`,
+      padding: "0.4rem 0.8rem",
+      borderRadius: 4,
+      backdropFilter: "blur(8px)"
+    }
+  }, "sets-erp/dashboard \u2014 ", /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.cyanL
+    }
+  }, "live")))))), /*#__PURE__*/React.createElement("section", {
+    style: {
+      padding: "5rem 2rem",
+      background: C.deep
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "3rem",
+      alignItems: "center"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement(ImgLoad, {
+    src: IMG.team,
+    alt: "SERIALSETS Team",
+    style: {
+      height: 360,
+      borderRadius: 10
+    }
+  })), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.1
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "About SERIALSETS"), /*#__PURE__*/React.createElement("h2", {
+    style: S.h2
+  }, "Multi-Disciplinary Technology, ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Singular Focus")), /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...S.desc,
+      marginBottom: "1.5rem"
+    }
+  }, "We specialise in ICT solutions, hardware systems engineering, and enterprise platform development. Every system we design is built with clarity, functionality, scalability, and reliability."), /*#__PURE__*/React.createElement("button", {
+    style: S.btnO,
+    onClick: () => setPage("about")
+  }, "Learn More About Us ", Ic.arrow))))), /*#__PURE__*/React.createElement("section", {
+    style: {
+      padding: "5rem 2rem",
+      textAlign: "center",
+      position: "relative"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `radial-gradient(ellipse 50% 40% at 50% 100%, ${C.cyanGlow} 0%, transparent 70%)`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      zIndex: 2
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...S.h2,
+      maxWidth: 500,
+      margin: "0 auto 1rem"
+    }
+  }, "Ready to Build ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Your System?"))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.08
+  }, /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...S.desc,
+      maxWidth: 420,
+      margin: "0 auto 2rem",
+      textAlign: "center"
+    }
+  }, "Let's design the technology your organisation needs.")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.16
+  }, /*#__PURE__*/React.createElement("button", {
+    style: S.btn,
+    onClick: () => setPage("contact")
+  }, "Request a Consultation ", Ic.arrow)))));
+}
+
+/* ─── ABOUT ─── */
+function About({
+  setPage
+}) {
+  const [as, setAs] = useState(0);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "page-transition",
+    style: {
+      paddingTop: "5rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 300,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: IMG.office,
+    alt: "SERIALSETS Office",
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(to bottom, ${C.midnight}44, ${C.midnight})`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      bottom: "2.5rem",
+      left: "2rem",
+      zIndex: 2
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "About SERIALSETS"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...S.h2,
+      fontSize: "2.2rem"
+    }
+  }, "Multi-Disciplinary Technology, ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Singular Focus")))), /*#__PURE__*/React.createElement("div", {
+    className: "section-pad",
+    style: {
+      padding: "4rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...S.desc,
+      maxWidth: 700,
+      marginBottom: "3rem",
+      fontSize: "1.05rem"
+    }
+  }, "SERIALSETS LIMITED is a multi-disciplinary technology and infrastructure company specialising in ICT solutions, hardware systems engineering, and enterprise platform development. We build intelligent systems that solve real-world operational challenges.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "3rem"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.4rem",
+      marginBottom: 10
+    }
+  }, "Our Vision"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...S.desc,
+      marginBottom: "2rem"
+    }
+  }, "To be a leading technology company delivering intelligent systems that power businesses and infrastructure across Africa."), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.4rem",
+      marginBottom: 10
+    }
+  }, "Our Mission"), /*#__PURE__*/React.createElement("p", {
+    style: S.desc
+  }, "To design, build, and manage technology systems that enable organisations to operate efficiently, scale sustainably, and adapt to evolving demands."))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.12
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: 10
+    }
+  }, ["Clarity", "Functionality", "Scalability", "Reliability"].map((v, i) => /*#__PURE__*/React.createElement("div", {
+    key: v,
+    style: {
+      padding: "1.5rem 1rem",
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      borderRadius: 8
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.5rem",
+      color: C.cyan,
+      marginBottom: 4
+    }
+  }, "0", i + 1), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.88rem",
+      fontWeight: 600
+    }
+  }, v)))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "5rem 2rem",
+      background: C.deep
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Our Approach")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.05
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: S.h2
+  }, "A Structured Path ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "from Concept to Scale"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "240px 1fr",
+      gap: "1.5rem",
+      marginTop: "2rem"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 4
+    }
+  }, STEPS.map((s, i) => /*#__PURE__*/React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.05
+  }, /*#__PURE__*/React.createElement("div", {
+    onClick: () => setAs(i),
+    style: {
+      padding: "0.7rem 1rem",
+      background: as === i ? C.carbon : "transparent",
+      border: `1px solid ${as === i ? C.borderH : "transparent"}`,
+      borderRadius: 6,
+      cursor: "pointer",
+      transition: "all 0.3s"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: "'JetBrains Mono',monospace",
+      fontSize: "0.55rem",
+      color: as === i ? C.cyan : C.slate,
+      letterSpacing: "0.1em"
+    }
+  }, s.num, " / ", s.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.92rem",
+      fontWeight: 600,
+      color: as === i ? C.white : C.mist,
+      marginTop: 3
+    }
+  }, s.title))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      borderRadius: 10,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement(ImgLoad, {
+    src: STEPS[as].img,
+    alt: STEPS[as].title,
+    style: {
+      height: 200
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: "'JetBrains Mono',monospace",
+      fontSize: "0.58rem",
+      color: C.cyan,
+      letterSpacing: "0.12em",
+      marginBottom: 8
+    }
+  }, "PHASE ", STEPS[as].num), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.6rem",
+      marginBottom: 8
+    }
+  }, STEPS[as].title), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.95rem",
+      color: C.cloud,
+      lineHeight: 1.8
+    }
+  }, STEPS[as].desc), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: "1.2rem",
+      display: "flex",
+      gap: 6
+    }
+  }, STEPS.map((_, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      flex: 1,
+      height: 3,
+      borderRadius: 2,
+      background: i <= as ? C.cyan : C.slate,
+      transition: "all 0.4s"
+    }
+  })))))))), /*#__PURE__*/React.createElement("div", {
+    className: "section-pad",
+    style: {
+      padding: "5rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Why SERIALSETS")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.05
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: S.h2
+  }, "What Sets ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Us Apart"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "repeat(3,1fr)",
+      gap: "1rem",
+      marginTop: "2rem"
+    },
+    className: "grid-3"
+  }, [{
+    t: "Integrated Approach",
+    d: "Software, hardware, and enterprise systems in one cohesive solution."
+  }, {
+    t: "Tailored Execution",
+    d: "Every solution designed for your specific operational environment."
+  }, {
+    t: "Long-Term Thinking",
+    d: "Systems that grow with your business — not just quick fixes."
+  }].map((item, i) => /*#__PURE__*/React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.07
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "1.8rem 1.4rem",
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      borderRadius: 8
+    }
+  }, /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.1rem",
+      marginBottom: 8
+    }
+  }, item.t), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.86rem",
+      color: C.mist,
+      lineHeight: 1.7
+    }
+  }, item.d))))))));
+}
+
+/* ─── SERVICES ─── */
+function Svc({
+  setPage
+}) {
+  const [exp, setExp] = useState("ict");
+  return /*#__PURE__*/React.createElement("div", {
+    className: "page-transition",
+    style: {
+      paddingTop: "5rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 240,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: IMG.circuit,
+    alt: "",
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(to bottom, ${C.midnight}44, ${C.midnight})`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      bottom: "2rem",
+      left: "2rem",
+      zIndex: 2
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Our Services"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...S.h2,
+      fontSize: "2rem"
+    }
+  }, "Complete, Integrated ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Technology Systems")))), /*#__PURE__*/React.createElement("div", {
+    className: "section-pad",
+    style: {
+      padding: "4rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 10
+    }
+  }, SERVICES.map(s => /*#__PURE__*/React.createElement(Reveal, {
+    key: s.id
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: exp === s.id ? C.carbon : C.deep,
+      border: `1px solid ${exp === s.id ? C.borderH : C.border}`,
+      borderRadius: 10,
+      overflow: "hidden",
+      transition: "all 0.4s"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    onClick: () => setExp(exp === s.id ? null : s.id),
+    style: {
+      padding: "1.2rem 1.6rem",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      cursor: "pointer"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: s.color
+    }
+  }, s.icon), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.2rem"
+    }
+  }, s.title)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.mist,
+      transform: exp === s.id ? "rotate(180deg)" : "rotate(0)",
+      transition: "transform 0.3s"
+    }
+  }, Ic.chev)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxHeight: exp === s.id ? 600 : 0,
+      overflow: "hidden",
+      transition: "max-height 0.5s ease"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "0 1.6rem 1.6rem",
+      display: "grid",
+      gridTemplateColumns: "1fr 1.2fr",
+      gap: "1.5rem"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ImgLoad, {
+    src: s.img,
+    alt: s.title,
+    style: {
+      height: 180,
+      borderRadius: 8,
+      marginBottom: 14
+    }
+  }), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.86rem",
+      color: C.cloud,
+      lineHeight: 1.7
+    }
+  }, s.tagline)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: "0.65rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: C.cyan,
+      marginBottom: 8
+    }
+  }, "Services Include"), s.items.map(item => /*#__PURE__*/React.createElement("div", {
+    key: item,
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 8,
+      fontSize: "0.83rem",
+      color: C.cloud,
+      padding: "0.35rem 0"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 5,
+      height: 1,
+      background: s.color,
+      flexShrink: 0
+    }
+  }), item)), /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: "0.65rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: C.cyan,
+      marginBottom: 8,
+      marginTop: 16
+    }
+  }, "Use Cases"), s.useCases.map(u => /*#__PURE__*/React.createElement("div", {
+    key: u,
+    style: {
+      padding: "0.5rem 0.8rem",
+      background: "rgba(255,255,255,0.03)",
+      borderRadius: 4,
+      borderLeft: `2px solid ${s.color}`,
+      fontSize: "0.83rem",
+      color: C.cloud,
+      marginBottom: 6
+    }
+  }, u)), /*#__PURE__*/React.createElement("button", {
+    style: {
+      ...S.btn,
+      marginTop: 12,
+      fontSize: "0.78rem",
+      padding: "0.5rem 1rem"
+    },
+    onClick: () => setPage("contact")
+  }, "Discuss This Service ", Ic.arrow)))))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "5rem 2rem",
+      background: C.deep
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Industries We Serve")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.05
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: S.h2
+  }, "Solutions Built for ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Your Sector"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "repeat(4,1fr)",
+      gap: "1rem",
+      marginTop: "2rem"
+    },
+    className: "grid-4"
+  }, INDUSTRIES.map((ind, i) => /*#__PURE__*/React.createElement(Reveal, {
+    key: i,
+    delay: i * 0.06
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "1.5rem 1.1rem",
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      borderRadius: 8,
+      textAlign: "center",
+      transition: "all 0.3s"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "1.5rem",
+      display: "block",
+      marginBottom: 8
+    }
+  }, ind.icon), /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: "0.88rem",
+      marginBottom: 4
+    }
+  }, ind.name), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.73rem",
+      color: C.mist
+    }
+  }, ind.desc))))))));
+}
+
+/* ─── PRODUCTS ─── */
+function Prod({
+  setPage
+}) {
+  const [act, setAct] = useState("erp");
+  const p = PRODUCTS.find(x => x.id === act);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "page-transition",
+    style: {
+      paddingTop: "5rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 240,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: IMG.dashboard,
+    alt: "",
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(to bottom, ${C.midnight}44, ${C.midnight})`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      bottom: "2rem",
+      left: "2rem",
+      zIndex: 2
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Our Products"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...S.h2,
+      fontSize: "2rem"
+    }
+  }, "Built from Real Needs, ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Designed to Scale")))), /*#__PURE__*/React.createElement("div", {
+    className: "section-pad",
+    style: {
+      padding: "4rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 6,
+      marginBottom: "2rem",
+      flexWrap: "wrap"
+    }
+  }, PRODUCTS.map(pr => /*#__PURE__*/React.createElement("button", {
+    key: pr.id,
+    onClick: () => setAct(pr.id),
+    style: {
+      padding: "0.55rem 1.2rem",
+      background: act === pr.id ? C.carbon : "transparent",
+      border: `1px solid ${act === pr.id ? pr.color : C.border}`,
+      borderRadius: 6,
+      color: act === pr.id ? pr.color : C.mist,
+      fontSize: "0.8rem",
+      fontWeight: 500,
+      cursor: "pointer",
+      transition: "all 0.3s",
+      fontFamily: "inherit"
+    }
+  }, pr.name)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.deep,
+      border: `1px solid ${C.border}`,
+      borderRadius: 12,
+      padding: "2.5rem",
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "2.5rem",
+      alignItems: "center"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: "inline-block",
+      fontFamily: "'JetBrains Mono',monospace",
+      fontSize: "0.55rem",
+      letterSpacing: "0.1em",
+      padding: "0.2rem 0.6rem",
+      borderRadius: 3,
+      textTransform: "uppercase",
+      background: `${p.color}18`,
+      color: p.color,
+      marginBottom: 12
+    }
+  }, p.badge), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.7rem",
+      marginBottom: 8
+    }
+  }, p.name), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.95rem",
+      color: C.cloud,
+      lineHeight: 1.75,
+      marginBottom: "1.5rem"
+    }
+  }, p.desc), /*#__PURE__*/React.createElement("button", {
+    style: S.btn,
+    onClick: () => setPage("contact")
+  }, "Request Demo ", Ic.arrow)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: "0.65rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: C.cyan,
+      marginBottom: 10
+    }
+  }, "Features"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: p.features.length > 4 ? "1fr 1fr" : "1fr",
+      gap: 6
+    }
+  }, p.features.map(f => /*#__PURE__*/React.createElement("div", {
+    key: f,
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 8,
+      fontSize: "0.82rem",
+      color: C.cloud,
+      padding: "0.5rem 0.7rem",
+      background: "rgba(255,255,255,0.03)",
+      borderRadius: 4,
+      borderLeft: `2px solid ${p.color}`
+    }
+  }, Ic.check, " ", f))))))));
+}
+
+/* ─── PROJECTS ─── */
+function Proj({
+  setPage
+}) {
+  const [active, setActive] = useState(null);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "page-transition",
+    style: {
+      paddingTop: "5rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 240,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: IMG.laptop,
+    alt: "",
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(to bottom, ${C.midnight}44, ${C.midnight})`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      bottom: "2rem",
+      left: "2rem",
+      zIndex: 2
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Our Projects"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...S.h2,
+      fontSize: "2rem"
+    }
+  }, "Solutions That Deliver ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Real Impact")))), /*#__PURE__*/React.createElement("div", {
+    className: "section-pad",
+    style: {
+      padding: "4rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "1.5rem"
+    }
+  }, PROJECTS.map((p, idx) => /*#__PURE__*/React.createElement(Reveal, {
+    key: p.id,
+    delay: idx * 0.08
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: active === p.id ? C.carbon : C.deep,
+      border: `1px solid ${active === p.id ? p.color + "40" : C.border}`,
+      borderRadius: 12,
+      overflow: "hidden",
+      transition: "all 0.4s"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    onClick: () => setActive(active === p.id ? null : p.id),
+    style: {
+      display: "grid",
+      gridTemplateColumns: "180px 1fr auto",
+      gap: "1.5rem",
+      cursor: "pointer",
+      alignItems: "center"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 130
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: p.img,
+    alt: p.client,
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      borderRadius: "12px 0 0 12px"
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "1.5rem 0"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 10,
+      marginBottom: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.53rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.1em",
+      padding: "0.2rem 0.5rem",
+      borderRadius: 3,
+      background: `${p.color}18`,
+      color: p.color,
+      fontFamily: "'JetBrains Mono',monospace"
+    }
+  }, p.category), p.formerly && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.68rem",
+      color: C.mist
+    }
+  }, "Formerly: ", p.formerly)), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.4rem",
+      marginBottom: 4
+    }
+  }, p.client), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.88rem",
+      color: C.cloud,
+      fontStyle: "italic",
+      fontFamily: "'Instrument Serif',serif"
+    }
+  }, p.tagline)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "0 1.5rem",
+      color: p.color,
+      transform: active === p.id ? "rotate(180deg)" : "rotate(0)",
+      transition: "transform 0.3s"
+    }
+  }, Ic.chev)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxHeight: active === p.id ? 1200 : 0,
+      overflow: "hidden",
+      transition: "max-height 0.6s ease"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "0 2rem 2.5rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 1,
+      background: C.border,
+      marginBottom: "1.5rem"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr 1fr",
+      gap: "1.5rem"
+    },
+    className: "grid-3"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: "0.65rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: "#E85A5A",
+      marginBottom: 10
+    }
+  }, "The Challenge"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.86rem",
+      color: C.cloud,
+      lineHeight: 1.75
+    }
+  }, p.challenge)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: "0.65rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: C.blue,
+      marginBottom: 10
+    }
+  }, "Our Solution"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.86rem",
+      color: C.cloud,
+      lineHeight: 1.75
+    }
+  }, p.solution)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: "0.65rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.12em",
+      color: C.cyan,
+      marginBottom: 10
+    }
+  }, "The Outcomes"), p.outcomes.map((o, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: "flex",
+      alignItems: "flex-start",
+      gap: 8,
+      padding: "0.5rem 0",
+      borderBottom: i < p.outcomes.length - 1 ? `1px solid ${C.border}` : "none"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      marginTop: 3,
+      flexShrink: 0
+    }
+  }, Ic.check), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.83rem",
+      color: C.cloud,
+      lineHeight: 1.6
+    }
+  }, o))))), /*#__PURE__*/React.createElement("button", {
+    style: {
+      ...S.btn,
+      marginTop: "1.5rem"
+    },
+    onClick: () => setPage("contact")
+  }, "Start a Similar Project ", Ic.arrow))))))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "4rem 2rem",
+      background: C.deep,
+      textAlign: "center"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...S.h2,
+      maxWidth: 480,
+      margin: "0 auto 1rem"
+    }
+  }, "Your Project ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Could Be Next"))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.08
+  }, /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...S.desc,
+      maxWidth: 400,
+      margin: "0 auto 2rem",
+      textAlign: "center"
+    }
+  }, "Whether it's a rebrand, a platform build, or a full business development engagement \u2014 we're ready.")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.16
+  }, /*#__PURE__*/React.createElement("button", {
+    style: S.btn,
+    onClick: () => setPage("contact")
+  }, "Let's Talk ", Ic.arrow))));
+}
+
+/* ─── INSIGHTS ─── */
+function Ins() {
+  const [f, setF] = useState("All");
+  const cats = ["All", ...new Set(INSIGHTS.map(a => a.cat))];
+  const list = f === "All" ? INSIGHTS : INSIGHTS.filter(a => a.cat === f);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "page-transition",
+    style: {
+      paddingTop: "5rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 200,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: IMG.laptop,
+    alt: "",
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(to bottom, ${C.midnight}44, ${C.midnight})`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      bottom: "2rem",
+      left: "2rem",
+      zIndex: 2
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Insights"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...S.h2,
+      fontSize: "2rem"
+    }
+  }, "Ideas, Guides & ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Case Studies")))), /*#__PURE__*/React.createElement("div", {
+    className: "section-pad",
+    style: {
+      padding: "4rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 5,
+      marginBottom: "2rem",
+      flexWrap: "wrap"
+    }
+  }, cats.map(c => /*#__PURE__*/React.createElement("button", {
+    key: c,
+    onClick: () => setF(c),
+    style: {
+      padding: "0.4rem 0.9rem",
+      background: f === c ? C.cyan : "transparent",
+      border: `1px solid ${f === c ? C.cyan : C.border}`,
+      borderRadius: 50,
+      color: f === c ? C.midnight : C.mist,
+      fontSize: "0.75rem",
+      fontWeight: 500,
+      cursor: "pointer",
+      transition: "all 0.3s",
+      fontFamily: "inherit"
+    }
+  }, c)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
+      gap: "1.2rem"
+    }
+  }, list.map((a, i) => /*#__PURE__*/React.createElement(Reveal, {
+    key: a.id,
+    delay: i * 0.06
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      borderRadius: 10,
+      overflow: "hidden",
+      cursor: "pointer",
+      transition: "all 0.3s"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 140,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: a.img,
+    alt: a.title,
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      transition: "transform 0.4s"
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "1.2rem 1.3rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      justifyContent: "space-between",
+      marginBottom: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.6rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.1em",
+      color: C.cyan,
+      fontWeight: 600
+    }
+  }, a.cat), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.65rem",
+      color: C.slate
+    }
+  }, a.time, " read")), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.05rem",
+      lineHeight: 1.35,
+      marginBottom: 8
+    }
+  }, a.title), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.8rem",
+      color: C.mist,
+      lineHeight: 1.7,
+      marginBottom: 10
+    }
+  }, a.excerpt), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.68rem",
+      color: C.slate
+    }
+  }, a.date), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.73rem",
+      color: C.cyan,
+      display: "flex",
+      alignItems: "center",
+      gap: 4
+    }
+  }, "Read more ", Ic.arrow))))))), /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: "3rem",
+      padding: "2.5rem",
+      background: C.deep,
+      border: `1px solid ${C.borderH}`,
+      borderRadius: 10,
+      textAlign: "center"
+    }
+  }, /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.3rem",
+      marginBottom: 6
+    }
+  }, "The SETS Signal"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.86rem",
+      color: C.mist,
+      marginBottom: "1rem"
+    }
+  }, "Technology insights delivered bi-weekly. No spam, just substance."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 6,
+      maxWidth: 380,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement("input", {
+    placeholder: "your@email.com",
+    style: {
+      ...S.input,
+      flex: 1
+    }
+  }), /*#__PURE__*/React.createElement("button", {
+    style: {
+      ...S.btn,
+      padding: "0.7rem 1.2rem"
+    }
+  }, "Subscribe")))))));
+}
+
+/* ─── CONTACT ─── */
+function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+  const [sent, setSent] = useState(false);
+  const u = (k, v) => setForm(f => ({
+    ...f,
+    [k]: v
+  }));
+  return /*#__PURE__*/React.createElement("div", {
+    className: "page-transition",
+    style: {
+      paddingTop: "5rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "relative",
+      height: 200,
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: IMG.meeting,
+    alt: "",
+    style: {
+      width: "100%",
+      height: "100%",
+      objectFit: "cover"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      inset: 0,
+      background: `linear-gradient(to bottom, ${C.midnight}44, ${C.midnight})`
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      bottom: "2rem",
+      left: "2rem",
+      zIndex: 2
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: S.tag
+  }, /*#__PURE__*/React.createElement("span", {
+    style: S.tagL
+  }), "Get In Touch"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      ...S.h2,
+      fontSize: "2rem"
+    }
+  }, "Let's Build ", /*#__PURE__*/React.createElement("span", {
+    style: S.em
+  }, "Your System")))), /*#__PURE__*/React.createElement("div", {
+    className: "section-pad",
+    style: {
+      padding: "4rem 2rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1.2fr",
+      gap: "3.5rem"
+    },
+    className: "grid-2"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("p", {
+    style: {
+      ...S.desc,
+      marginBottom: "2.5rem"
+    }
+  }, "We are available to discuss your project and provide tailored technology solutions. Fill out the form and our team will respond within 24 hours.")), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.1
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "1.2rem"
+    }
+  }, [{
+    icon: Ic.mail,
+    l: "Email",
+    v: "info@serialsets.com"
+  }, {
+    icon: Ic.phone,
+    l: "Phone",
+    v: "+234 XXX XXX XXXX"
+  }, {
+    icon: Ic.pin,
+    l: "Location",
+    v: "Lekki–Ajah Axis, Lagos, Nigeria"
+  }].map((c, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 40,
+      height: 40,
+      borderRadius: 8,
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      color: C.cyan
+    }
+  }, c.icon), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.6rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.1em",
+      color: C.mist
+    }
+  }, c.l), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: "0.88rem",
+      color: C.cloud
+    }
+  }, c.v)))))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.15
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: "2rem"
+    }
+  }, /*#__PURE__*/React.createElement(ImgLoad, {
+    src: IMG.office,
+    alt: "Our office",
+    style: {
+      height: 200,
+      borderRadius: 8
+    }
+  })))), /*#__PURE__*/React.createElement(Reveal, {
+    delay: 0.1
+  }, sent ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.carbon,
+      border: `1px solid ${C.borderH}`,
+      borderRadius: 10,
+      padding: "3rem",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      textAlign: "center",
+      minHeight: 400
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 56,
+      height: 56,
+      borderRadius: "50%",
+      background: `${C.cyan}18`,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      color: C.cyan,
+      marginBottom: 14,
+      animation: "glow 2s infinite"
+    }
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: "28",
+    height: "28",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "2"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M20 6L9 17l-5-5"
+  }))), /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.4rem",
+      marginBottom: 6
+    }
+  }, "Message Received"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.88rem",
+      color: C.mist
+    }
+  }, "We'll get back to you within 24 hours. Thank you.")) : /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      borderRadius: 10,
+      padding: "2rem"
+    }
+  }, /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.15rem",
+      marginBottom: "1.3rem"
+    }
+  }, "Request a Consultation"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: S.label
+  }, "Name *"), /*#__PURE__*/React.createElement("input", {
+    style: S.input,
+    value: form.name,
+    onChange: e => u("name", e.target.value)
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: S.label
+  }, "Company"), /*#__PURE__*/React.createElement("input", {
+    style: S.input,
+    value: form.company,
+    onChange: e => u("company", e.target.value)
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: S.label
+  }, "Email *"), /*#__PURE__*/React.createElement("input", {
+    type: "email",
+    style: S.input,
+    value: form.email,
+    onChange: e => u("email", e.target.value)
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: S.label
+  }, "Phone"), /*#__PURE__*/React.createElement("input", {
+    style: S.input,
+    value: form.phone,
+    onChange: e => u("phone", e.target.value)
+  }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    style: S.label
+  }, "Project Description *"), /*#__PURE__*/React.createElement("textarea", {
+    style: {
+      ...S.input,
+      minHeight: 120,
+      resize: "vertical"
+    },
+    value: form.message,
+    onChange: e => u("message", e.target.value)
+  })), /*#__PURE__*/React.createElement("button", {
+    style: {
+      ...S.btn,
+      width: "100%",
+      justifyContent: "center"
+    },
+    onClick: () => {
+      if (form.name && form.email && form.message) setSent(true);
+    }
+  }, "Submit Request ", Ic.arrow))))))));
+}
+
+/* ─── FOOTER ─── */
+function Foot({
+  setPage
+}) {
+  return /*#__PURE__*/React.createElement("footer", {
+    style: {
+      padding: "3.5rem 2rem 1.5rem",
+      borderTop: `1px solid ${C.border}`,
+      background: C.deep
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "2fr 1fr 1fr 1fr",
+      gap: "2rem"
+    },
+    className: "footer-grid"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 10,
+      marginBottom: 12,
+      cursor: "pointer"
+    },
+    onClick: () => setPage("home")
+  }, /*#__PURE__*/React.createElement("img", {
+    src: LOGO_FT,
+    alt: "SERIALSETS",
+    style: {
+      height: 28,
+      objectFit: "contain"
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontSize: "1.05rem"
+    }
+  }, "SERIALSETS")), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: "0.76rem",
+      color: C.mist,
+      lineHeight: 1.7,
+      maxWidth: 240
+    }
+  }, "Integrated ICT, hardware, and enterprise systems designed for performance, scalability, and long-term value.")), [{
+    h: "Company",
+    l: [["About", "about"], ["Services", "services"], ["Products", "products"], ["Projects", "projects"], ["Contact", "contact"]]
+  }, {
+    h: "Products",
+    l: [["SETS ERP", "products"], ["Property Manager", "products"], ["Energy Monitor", "products"], ["Learn Platform", "products"]]
+  }, {
+    h: "Connect",
+    l: [["info@serialsets.com", null], ["LinkedIn", null], ["Twitter / X", null], ["Instagram", null]]
+  }].map((col, i) => /*#__PURE__*/React.createElement("div", {
+    key: i
+  }, /*#__PURE__*/React.createElement("h4", {
+    style: {
+      fontSize: "0.55rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.16em",
+      color: C.cyan,
+      marginBottom: 10,
+      fontWeight: 600
+    }
+  }, col.h), col.l.map(([label, pg]) => /*#__PURE__*/React.createElement("div", {
+    key: label,
+    style: {
+      fontSize: "0.76rem",
+      color: C.mist,
+      marginBottom: 5,
+      cursor: pg ? "pointer" : "default",
+      transition: "color 0.3s"
+    },
+    onClick: () => pg && setPage(pg)
+  }, label))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1160,
+      margin: "2.5rem auto 0",
+      paddingTop: "1rem",
+      borderTop: `1px solid ${C.border}`,
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      flexWrap: "wrap",
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "0.64rem",
+      color: C.slate
+    }
+  }, "\xA9 2026 SERIALSETS LIMITED. All rights reserved."), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "'Instrument Serif',serif",
+      fontStyle: "italic",
+      color: C.cyan,
+      fontSize: "0.8rem"
+    }
+  }, "Exactly Yours.")));
+}
+
+/* ─── APP ─── */
+function App() {
+  const [page, setP] = useState("home");
+  const setPage = useCallback(p => {
+    setP(p);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, []);
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.midnight,
+      color: C.white,
+      fontFamily: "'DM Sans',system-ui,sans-serif",
+      minHeight: "100vh"
+    }
+  }, /*#__PURE__*/React.createElement(Nav, {
+    page: page,
+    setPage: setPage
+  }), page === "home" && /*#__PURE__*/React.createElement(Home, {
+    setPage: setPage
+  }), page === "about" && /*#__PURE__*/React.createElement(About, {
+    setPage: setPage
+  }), page === "services" && /*#__PURE__*/React.createElement(Svc, {
+    setPage: setPage
+  }), page === "products" && /*#__PURE__*/React.createElement(Prod, {
+    setPage: setPage
+  }), page === "projects" && /*#__PURE__*/React.createElement(Proj, {
+    setPage: setPage
+  }), page === "insights" && /*#__PURE__*/React.createElement(Ins, null), page === "contact" && /*#__PURE__*/React.createElement(Contact, null), /*#__PURE__*/React.createElement(Foot, {
+    setPage: setPage
+  }));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(App, null));
+</script>
+</body>
+</html>
