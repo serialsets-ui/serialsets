@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://serialsetsweb.netlify.app/sitemap.xml

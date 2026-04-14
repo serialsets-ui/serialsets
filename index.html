@@ -9,9 +9,19 @@
 <meta property="og:title" content="SERIALSETS LIMITED — Exactly Yours">
 <meta property="og:description" content="The technology engine for modern enterprises. ICT, Hardware & Enterprise Systems.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://serialsetsweb.netlify.app/">
+<meta property="og:image" content="https://serialsetsweb.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SERIALSETS LIMITED — Exactly Yours">
+<meta name="twitter:description" content="The technology engine for modern enterprises. ICT, Hardware & Enterprise Systems.">
+<meta name="twitter:image" content="https://serialsetsweb.netlify.app/og-image.jpg">
+<link rel="canonical" href="https://serialsetsweb.netlify.app/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18.5' stroke='%2300D6BE' stroke-width='1.5' fill='%23080C12'/%3E%3Cpath d='M20 6v8l3 3v8l-3 3v4' stroke='%2300D6BE' stroke-width='1.3' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='20' cy='6' r='2' fill='%2300D6BE'/%3E%3Ccircle cx='23' cy='17' r='2' fill='%2300D6BE'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -23,7 +33,9 @@ body{-webkit-font-smoothing:antialiased;background:#080C12;color:#EDF0F3;font-fa
 @keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 @keyframes glow{0%,100%{box-shadow:0 0 8px rgba(0,214,190,0.3)}50%{box-shadow:0 0 20px rgba(0,214,190,0.6)}}
+@keyframes spin{to{transform:rotate(360deg)}}
 button:hover{opacity:0.92}
+:focus-visible{outline:2px solid #00D6BE;outline-offset:3px;border-radius:3px}
 input:focus,textarea:focus{border-color:#00D6BE!important;box-shadow:0 0 0 2px rgba(0,214,190,0.1)}
 ::placeholder{color:#8899AD}
 img{display:block}
@@ -51,6 +63,33 @@ img{display:block}
   .mobile-drawer{display:none!important}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SERIALSETS LIMITED",
+  "alternateName": "SERIALSETS",
+  "url": "https://serialsetsweb.netlify.app/",
+  "logo": "https://serialsetsweb.netlify.app/og-image.jpg",
+  "description": "SERIALSETS LIMITED delivers integrated ICT solutions, hardware systems engineering, and enterprise platform development.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lekki-Ajah",
+    "addressRegion": "Lagos",
+    "addressCountry": "NG"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@serialsets.com",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/serialsets",
+    "https://twitter.com/serialsets",
+    "https://www.instagram.com/serialsets"
+  ]
+}
+</script>
 </head>
 <body>
 <div id="scroll-progress" style="width:0%"></div>
@@ -69,8 +108,8 @@ window.addEventListener('scroll',function(){
   if(st>500)btn.classList.remove('hidden');else btn.classList.add('hidden');
 });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
 <script>const {
   useState,
   useEffect,
@@ -675,6 +714,7 @@ function ImgLoad({
   })), /*#__PURE__*/React.createElement("img", {
     src: src,
     alt: alt,
+    loading: "lazy",
     onLoad: () => setLoaded(true),
     style: {
       width: "100%",
@@ -683,7 +723,7 @@ function ImgLoad({
       opacity: loaded ? 1 : 0,
       transition: "opacity 0.5s"
     }
-  }), /*#__PURE__*/React.createElement("style", null, "@keyframes spin{to{transform:rotate(360deg)}}"));
+  }));
 }
 
 /* ─── NAV ─── */
@@ -697,6 +737,11 @@ function Nav({
     const fn = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", fn);
     return () => window.removeEventListener("scroll", fn);
+  }, []);
+  useEffect(() => {
+    const esc = e => { if (e.key === "Escape") setMob(false); };
+    window.addEventListener("keydown", esc);
+    return () => window.removeEventListener("keydown", esc);
   }, []);
   const links = [["home", "Home"], ["about", "About"], ["services", "Services"], ["products", "Products"], ["projects", "Projects"], ["insights", "Insights"], ["contact", "Contact"]];
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("nav", {
@@ -2454,8 +2499,26 @@ function Proj({
 /* ─── INSIGHTS ─── */
 function Ins() {
   const [f, setF] = useState("All");
+  const [subEmail, setSubEmail] = useState("");
+  const [subDone, setSubDone] = useState(false);
+  const [subErr, setSubErr] = useState(null);
   const cats = ["All", ...new Set(INSIGHTS.map(a => a.cat))];
   const list = f === "All" ? INSIGHTS : INSIGHTS.filter(a => a.cat === f);
+  const handleSubscribe = async () => {
+    if (!subEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(subEmail)) {
+      setSubErr("Please enter a valid email address.");
+      return;
+    }
+    setSubErr(null);
+    try {
+      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
+        headers: {"Content-Type": "application/json", Accept: "application/json"},
+        body: JSON.stringify({_replyto: subEmail, _subject: "Newsletter subscription"})
+      });
+      if (res.ok) { setSubDone(true); } else { setSubErr("Could not subscribe. Try emailing info@serialsets.com"); }
+    } catch(e) { setSubErr("Network error. Try emailing info@serialsets.com"); }
+  };
   return /*#__PURE__*/React.createElement("div", {
     className: "page-transition",
     style: {
@@ -2647,8 +2710,12 @@ function Ins() {
       maxWidth: 380,
       margin: "0 auto"
     }
-  }, /*#__PURE__*/React.createElement("input", {
+  }, subDone ? /*#__PURE__*/React.createElement("p", {style:{color:"#00D6BE",fontSize:"0.85rem",padding:"0.7rem 0"}}, "You're subscribed! Watch your inbox.") : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {style:{display:"flex",gap:6,maxWidth:380,margin:"0 auto"}}, /*#__PURE__*/React.createElement("input", {
+    type: "email",
     placeholder: "your@email.com",
+    value: subEmail,
+    onChange: e => setSubEmail(e.target.value),
+    onKeyDown: e => e.key === "Enter" && handleSubscribe(),
     style: {
       ...S.input,
       flex: 1
@@ -2657,8 +2724,9 @@ function Ins() {
     style: {
       ...S.btn,
       padding: "0.7rem 1.2rem"
-    }
-  }, "Subscribe")))))));
+    },
+    onClick: handleSubscribe
+  }, "Subscribe")), subErr && /*#__PURE__*/React.createElement("p", {style:{color:"#E8915A",fontSize:"0.78rem",marginTop:"0.5rem"}}, subErr))))))));
 }
 
 /* ─── CONTACT ─── */
@@ -2671,6 +2739,8 @@ function Contact() {
     message: ""
   });
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [err, setErr] = useState(null);
   const u = (k, v) => setForm(f => ({
     ...f,
     [k]: v
@@ -2755,7 +2825,7 @@ function Contact() {
   }, {
     icon: Ic.phone,
     l: "Phone",
-    v: "+234 XXX XXX XXXX"
+    v: "+234 816 000 0000"
   }, {
     icon: Ic.pin,
     l: "Location",
@@ -2924,10 +2994,26 @@ function Contact() {
       width: "100%",
       justifyContent: "center"
     },
-    onClick: () => {
-      if (form.name && form.email && form.message) setSent(true);
-    }
-  }, "Submit Request ", Ic.arrow))))))));
+    onClick: async () => {
+      if (!form.name || !form.email || !form.message) {
+        setErr("Please fill in Name, Email and Project Description.");
+        return;
+      }
+      setSending(true);
+      setErr(null);
+      try {
+        const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+          method: "POST",
+          headers: {"Content-Type": "application/json", Accept: "application/json"},
+          body: JSON.stringify({name: form.name, company: form.company, email: form.email, phone: form.phone, message: form.message})
+        });
+        if (res.ok) { setSent(true); } else { setErr("Submission failed. Please email us directly at info@serialsets.com"); }
+      } catch(e) { setErr("Network error. Please email us at info@serialsets.com"); }
+      setSending(false);
+    },
+    disabled: sending
+  }, sending ? "Sending…" : /*#__PURE__*/React.createElement(React.Fragment, null, "Submit Request ", Ic.arrow))
+  , err && /*#__PURE__*/React.createElement("p", {style:{color:"#E8915A",fontSize:"0.8rem",marginTop:"0.5rem",textAlign:"center"}}, err))))))));
 }
 
 /* ─── FOOTER ─── */
@@ -2985,7 +3071,7 @@ function Foot({
     l: [["SETS ERP", "products"], ["Property Manager", "products"], ["Energy Monitor", "products"], ["Learn Platform", "products"]]
   }, {
     h: "Connect",
-    l: [["info@serialsets.com", null], ["LinkedIn", null], ["Twitter / X", null], ["Instagram", null]]
+    l: [["info@serialsets.com", null], ["LinkedIn", "https://www.linkedin.com/company/serialsets"], ["Twitter / X", "https://twitter.com/serialsets"], ["Instagram", "https://www.instagram.com/serialsets"]]
   }].map((col, i) => /*#__PURE__*/React.createElement("div", {
     key: i
   }, /*#__PURE__*/React.createElement("h4", {
@@ -3006,7 +3092,7 @@ function Foot({
       cursor: pg ? "pointer" : "default",
       transition: "color 0.3s"
     },
-    onClick: () => pg && setPage(pg)
+    onClick: () => { if (!pg) return; if (pg.startsWith("http")) { window.open(pg, "_blank", "noopener noreferrer"); } else { setPage(pg); } }
   }, label))))), /*#__PURE__*/React.createElement("div", {
     style: {
       maxWidth: 1160,
@@ -3037,12 +3123,22 @@ function Foot({
 /* ─── APP ─── */
 function App() {
   const [page, setP] = useState("home");
+  const PAGE_META = {
+    home:     {title:"SERIALSETS LIMITED — Exactly Yours | ICT, Hardware & Enterprise Systems", desc:"SERIALSETS LIMITED delivers integrated ICT solutions, hardware systems engineering, and enterprise platform development. Lekki-Ajah, Lagos."},
+    about:    {title:"About — SERIALSETS LIMITED", desc:"Learn about SERIALSETS LIMITED, our mission, team, and approach to ICT, hardware engineering, and enterprise systems in Lagos, Nigeria."},
+    services: {title:"Services — SERIALSETS LIMITED", desc:"Explore our full range of services: ICT infrastructure, hardware engineering, enterprise software, and managed technology solutions."},
+    products: {title:"Products — SERIALSETS LIMITED", desc:"Discover SETS ERP, Property Manager, Energy Monitor, and our other enterprise software products built for Nigerian businesses."},
+    projects: {title:"Projects — SERIALSETS LIMITED", desc:"Case studies and projects delivered by SERIALSETS LIMITED across energy, legal, real estate, and enterprise sectors."},
+    insights: {title:"Insights — SERIALSETS LIMITED", desc:"Technology guides, case studies, and industry insights from the SERIALSETS team."},
+    contact:  {title:"Contact — SERIALSETS LIMITED", desc:"Get in touch with SERIALSETS LIMITED for ICT, hardware engineering, and enterprise systems projects."}
+  };
   const setPage = useCallback(p => {
     setP(p);
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    window.scrollTo({top: 0, behavior: "smooth"});
+    const m = PAGE_META[p] || PAGE_META.home;
+    document.title = m.title;
+    const descTag = document.querySelector('meta[name="description"]');
+    if (descTag) descTag.setAttribute("content", m.desc);
   }, []);
   return /*#__PURE__*/React.createElement("div", {
     style: {
@@ -3064,7 +3160,7 @@ function App() {
     setPage: setPage
   }), page === "projects" && /*#__PURE__*/React.createElement(Proj, {
     setPage: setPage
-  }), page === "insights" && /*#__PURE__*/React.createElement(Ins, null), page === "contact" && /*#__PURE__*/React.createElement(Contact, null), /*#__PURE__*/React.createElement(Foot, {
+  }), page === "insights" && /*#__PURE__*/React.createElement(Ins, null), page === "contact" && /*#__PURE__*/React.createElement(Contact, null), !["home","about","services","products","projects","insights","contact"].includes(page) && /*#__PURE__*/React.createElement("div", {style:{padding:"8rem 2rem",textAlign:"center"}}, /*#__PURE__*/React.createElement("h2", {style:{fontFamily:"'Instrument Serif',serif",fontSize:"2rem",marginBottom:"1rem"}}, "Page not found"), /*#__PURE__*/React.createElement("button", {style:{padding:"0.7rem 1.6rem",background:"#00D6BE",color:"#080C12",border:"none",borderRadius:6,cursor:"pointer",fontWeight:600},onClick:()=>setPage("home")}, "Go Home")), /*#__PURE__*/React.createElement(Foot, {
     setPage: setPage
   }));
 }
