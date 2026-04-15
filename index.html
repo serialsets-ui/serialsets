@@ -2511,7 +2511,7 @@ function Ins() {
     }
     setSubErr(null);
     try {
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const res = await fetch("https://formspree.io/f/mbdqlnyr", {
         method: "POST",
         headers: {"Content-Type": "application/json", Accept: "application/json"},
         body: JSON.stringify({_replyto: subEmail, _subject: "Newsletter subscription"})
@@ -3002,7 +3002,7 @@ function Contact() {
       setSending(true);
       setErr(null);
       try {
-        const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        const res = await fetch("https://formspree.io/f/mbdqlnyr", {
           method: "POST",
           headers: {"Content-Type": "application/json", Accept: "application/json"},
           body: JSON.stringify({name: form.name, company: form.company, email: form.email, phone: form.phone, message: form.message})
