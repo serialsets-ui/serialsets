@@ -409,6 +409,22 @@ const PRODUCTS = [{
   desc: "A digital learning system for courses, students, and content.",
   features: ["Course management", "Student records", "Content delivery", "Progress tracking"]
 }];
+const TESTIMONIALS = [{
+  quote: "Serialsets Limited has been a highly dependable technical and operational partner to our organization. From the onset of engagement, their team demonstrated a strong understanding of our operational structure and delivered solutions that were both practical and efficient. Their approach is not just task-based, but solution-driven, ensuring that every implementation aligns with real operational needs. We have experienced noticeable improvements in system reliability, coordination, and overall service execution since working with them.",
+  author: "Management",
+  company: "ORO ENERGY",
+  color: C.orange
+}, {
+  quote: "Our experience working with Serialsets Limited has been marked by professionalism, consistency, and a clear commitment to excellence. They bring a structured approach to project execution, ensuring that every requirement is properly understood before implementation. What stands out most is their ability to deliver within agreed timelines while maintaining quality standards. Serialsets Limited has proven to be a reliable partner in supporting our operational and technical needs, and we confidently recommend their services.",
+  author: "Management",
+  company: "KCEE Elevator",
+  color: C.cyan
+}, {
+  quote: "Justra Solution has transformed the way we manage and interact with our professional and business activities. The platform is well-structured, easy to navigate, and designed with real operational challenges in mind. Beyond the technology itself, what makes the experience stand out is the continuous support and improvement from the Serialsets Limited team. For us, Justra is not just a tool — it is becoming an essential infrastructure for organization, coordination, and access to structured services.",
+  author: "Verified Users",
+  company: "Justra Solution",
+  color: C.blue
+}];
 const INDUSTRIES = [{
   icon: "🏢",
   name: "Businesses & SMEs",
@@ -1511,6 +1527,37 @@ function Home({
     style: S.btnO,
     onClick: () => setPage("about")
   }, "Learn More About Us ", Ic.arrow))))), /*#__PURE__*/React.createElement("section", {
+    style: {
+      padding: "5rem 2rem",
+      background: C.deep,
+      borderTop: `1px solid ${C.border}`,
+      borderBottom: `1px solid ${C.border}`
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {maxWidth: 1160, margin: "0 auto"}
+  }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {style: S.tag}, /*#__PURE__*/React.createElement("span", {style: S.tagL}), "Client Voices"), /*#__PURE__*/React.createElement("h2", {style: {...S.h2, marginBottom: "3rem"}}, "What Our Clients ", /*#__PURE__*/React.createElement("span", {style: S.em}, "Say"))), /*#__PURE__*/React.createElement("div", {
+    style: {display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "1.5rem"},
+    className: "grid-3"
+  }, TESTIMONIALS.map((t, i) => /*#__PURE__*/React.createElement(Reveal, {key: i, delay: i * 0.1}, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.carbon,
+      border: `1px solid ${C.border}`,
+      borderTop: `3px solid ${t.color}`,
+      borderRadius: 10,
+      padding: "2rem",
+      height: "100%",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      gap: "1.5rem"
+    }
+  }, /*#__PURE__*/React.createElement("div", null,
+    /*#__PURE__*/React.createElement("div", {style: {color: t.color, fontSize: "2.5rem", lineHeight: 1, marginBottom: "1rem", fontFamily: "'Instrument Serif',serif"}}, "\u201C"),
+    /*#__PURE__*/React.createElement("p", {style: {fontSize: "0.88rem", color: C.cloud, lineHeight: 1.8}}, t.quote)
+  ), /*#__PURE__*/React.createElement("div", {style: {borderTop: `1px solid ${C.border}`, paddingTop: "1rem"}},
+    /*#__PURE__*/React.createElement("div", {style: {fontWeight: 600, fontSize: "0.85rem", color: C.white}}, t.author),
+    /*#__PURE__*/React.createElement("div", {style: {fontSize: "0.75rem", color: t.color, fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginTop: 2}}, t.company)
+  ))))))), /*#__PURE__*/React.createElement("section", {
     style: {
       padding: "5rem 2rem",
       textAlign: "center",
