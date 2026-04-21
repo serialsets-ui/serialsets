@@ -57,10 +57,23 @@ img{display:block}
   .hero-h1{font-size:2.2rem!important}
   .section-pad{padding:3.5rem 1.2rem!important}
   .footer-grid{grid-template-columns:1fr 1fr!important}
+  .approach-grid{grid-template-columns:1fr!important}
+  .proj-card-grid{grid-template-columns:1fr!important}
+  .proj-card-img{height:200px!important;width:100%!important}
 }
 @media(max-width:600px){
   .grid-4{grid-template-columns:1fr!important}
   .footer-grid{grid-template-columns:1fr!important}
+  .form-row{grid-template-columns:1fr!important}
+  .section-pad{padding:2.5rem 1rem!important}
+  .contact-grid{grid-template-columns:1fr!important;gap:2rem!important}
+  .prod-grid{grid-template-columns:1fr!important}
+}
+@media(max-width:480px){
+  .hero-h1{font-size:1.85rem!important}
+  .section-pad{padding:2rem 1rem!important}
+  #whatsapp-btn{width:46px;height:46px;bottom:1.2rem;left:1.2rem}
+  #back-to-top{width:40px;height:40px;bottom:1.2rem;right:1.2rem}
 }
 @media(min-width:901px){
   .nav-mob-btn{display:none!important}
@@ -855,10 +868,10 @@ function Nav({
       top: 0,
       right: 0,
       bottom: 0,
-      width: 280,
+      width: "min(280px, 82vw)",
       background: C.deep,
       zIndex: 150,
-      padding: "5rem 2rem 2rem",
+      padding: "5rem 1.5rem 2rem",
       display: "flex",
       flexDirection: "column",
       gap: 6,
@@ -1536,7 +1549,7 @@ function Home({
   }, /*#__PURE__*/React.createElement("div", {
     style: {maxWidth: 1160, margin: "0 auto"}
   }, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("div", {style: S.tag}, /*#__PURE__*/React.createElement("span", {style: S.tagL}), "Client Voices"), /*#__PURE__*/React.createElement("h2", {style: {...S.h2, marginBottom: "3rem"}}, "What Our Clients ", /*#__PURE__*/React.createElement("span", {style: S.em}, "Say"))), /*#__PURE__*/React.createElement("div", {
-    style: {display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))", gap: "1.5rem"},
+    style: {display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: "1.5rem"},
     className: "grid-3"
   }, TESTIMONIALS.map((t, i) => /*#__PURE__*/React.createElement(Reveal, {key: i, delay: i * 0.1}, /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1745,7 +1758,7 @@ function About({
       gap: "1.5rem",
       marginTop: "2rem"
     },
-    className: "grid-2"
+    className: "grid-2 approach-grid"
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
@@ -2373,7 +2386,7 @@ function Proj({
       cursor: "pointer",
       alignItems: "center"
     },
-    className: "grid-2"
+    className: "grid-2 proj-card-grid"
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       height: 130
@@ -2858,7 +2871,7 @@ function Contact() {
       gridTemplateColumns: "1fr 1.2fr",
       gap: "3.5rem"
     },
-    className: "grid-2"
+    className: "grid-2 contact-grid"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Reveal, null, /*#__PURE__*/React.createElement("p", {
     style: {
       ...S.desc,
@@ -3000,7 +3013,8 @@ function Contact() {
       display: "grid",
       gridTemplateColumns: "1fr 1fr",
       gap: 12
-    }
+    },
+    className: "form-row"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     style: S.label
   }, "Name *"), /*#__PURE__*/React.createElement("input", {
@@ -3018,7 +3032,8 @@ function Contact() {
       display: "grid",
       gridTemplateColumns: "1fr 1fr",
       gap: 12
-    }
+    },
+    className: "form-row"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     style: S.label
   }, "Email *"), /*#__PURE__*/React.createElement("input", {
